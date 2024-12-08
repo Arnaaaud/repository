@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<!-- Paramètre du site -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Moselle</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+</head>
+
+<!-- Page d'accueil + navigation -->
+
+<body>
+    <section class="top-page">
+        <header class="header" id="header">
+            <img src="images/logo.png" class="logo">
+            <nav class="nav-links">
+                <li><a href="" >Accueil</a></li>
+                <li><a href="#dests" > Destinations coup de coeur</a></li>
+                <li><a href="#all-dests" >Autres destinations</a></li>
+                <li><a href="./contact.php" >Contact</a></li>
+            </nav>
+            <div class="burger-container">
+                <div class="burger"></div>
+            </div>
+        </header>
+        <div class="landing-page">
+            <h1 class="big-title">Le spectacle de la nature est toujours beau.</h1>
+                <a class="scroll" href="#services">Scroll 
+                    <i class="fas fa-angle-down"></i></a>
+            </a>
+        </div>
+    </section>
+
+    <!-- Services -->
+
+    <section class="delivery-container" id="services">
+        <div class="services">
+            <i class="fa-solid fa-tree delivery-icon"></i>
+            <p class="box-content">Préserver</p>
+        </div>
+        <div class="services">
+            <i class="fa-solid fa-mountain delivery-icon"></i>
+            <p class="box-content">Respecter</p>
+        </div>
+        <div class="services">
+            <i class="fa-solid fa-seedling delivery-icon"></i>
+            <p class="box-content">Protéger</p>
+        </div>
+    </section>
+
+    <!-- Top Destinations  -->
+
+    <section class="best-dests-container" id="dests">
+        <h1 class="section-title">Top Destinations</h1>
+        <div class="best-dests">
+            <a href="https://fr.wikipedia.org/wiki/Pays_de_Bitche"  target ="_blank" class="dests-box no-grid dest1">
+                <div class="dests-details">
+                    <h1 class="dest-name">Colorado du Pays de Bitche</h1>
+                </div>
+            </a>
+            <a href="https://fr.wikipedia.org/wiki/Ch%C3%A2teau_de_Schlo%C3%9Fberg" target ="_blank" class="dests-box no-grid dest2">
+                <div class="dests-details">
+                    <h1 class="dest-name">Château de Schlossberg</h1>
+                </div>
+            </a>
+            <a href="https://fr.wikipedia.org/wiki/Carri%C3%A8re_Barrois" target="_blank" class="dests-box no-grid dest3">
+                <div class="dests-details">
+                    <h1 class="dest-name">Carrière du Barrois</h1>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Autres destinations -->
+
+    <section class="dests-container" id="all-dests">
+        <h1 class="section-title">Autres destinations</h1>
+        <div class="grid-dests">
+            <a href="https://fr.wikipedia.org/wiki/Parc_animalier_de_Sainte-Croix" target="_blank" class="dests-box grid dest-grid1">
+                <div class="dests-details">
+                    <h1 class="dest-name">Parc animalier de Sainte-croix</h1>
+                </div>
+            </a>
+            <a href="https://fr.wikipedia.org/wiki/Parc_zoologique_d%27Amn%C3%A9ville" target="_blank" class="dests-box grid dest-grid2">
+                <div class="dests-details">
+                    <h1 class="dest-name">Zoo d'Amnéville</h1>
+                </div>
+            </a>
+            <a href="https://fr.wikipedia.org/wiki/Citadelle_de_Bitche" target="_blank" class="dests-box grid dest-grid3">
+                <div class="dests-details">
+                    <h1 class="dest-name">Citadelle de Bitche</h1>
+                </div>
+            </a>
+            <a href="https://fr.wikipedia.org/wiki/La_Mine,_mus%C3%A9e_du_carreau_Wendel" target="_blank" class="dests-box grid dest-grid4">
+                <div class="dests-details">
+                    <h1 class="dest-name">Musée du carreau Wendel</h1>
+                </div>
+            </a>
+            <a href="https://fr.wikipedia.org/wiki/Place_Stanislas" target="_blank" class="dests-box grid dest-grid5">
+                <div class="dests-details">
+                    <h1 class="dest-name">Place Stanislas</h1>
+                </div>
+            </a>
+            <a href="https://fr.wikipedia.org/wiki/Parc_arch%C3%A9ologique_europ%C3%A9en_de_Bliesbruck-Reinheim" target="_blank" class="dests-box grid dest-grid6">
+                <div class="dests-details">
+                    <h1 class="dest-name">Parc archéologique de Bliesbruck-Reinheim</h1>
+                </div>
+            </a>
+        </div>
+    </section>
+    
+    <!-- Pied de page -->
+
+    <footer class="footer" id="footer">
+        <span class="copyrights">&copy; 2024 - Nature Moselle</span>
+        <a href="#" class="conditions">Conditions Générales</a>
+    </footer>
+
+    <!-- Menu burger -->
+
+    <script>
+        const burgerContainer = document.querySelector('.burger-container');
+        const navLinks = document.querySelector('.nav-links');
+
+        burgerContainer.addEventListener('click', () => {
+            burgerContainer.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        })
+    </script>
+    
+</body>
+
+</html>
